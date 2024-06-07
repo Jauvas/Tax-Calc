@@ -24,7 +24,7 @@
         }
 
         .form {
-            height: 18em;
+            height: 18em auto;
             width: 16em;
             padding: 4%;
             border-radius: 16px;
@@ -243,13 +243,17 @@
             padding: 10px;
         }
 
-        .display p{
-            color: white;
+        p{
+            color: black;
+            font-weight: bold;
+            margin: auto;
+            text-align: center;
+            justify-content: start;
         }
     </style>
 </head>
 <body>
-    <h1>Tax Calculator</h1>
+    <h1>Vehicle Import Tax Calculator</h1>
     <form class="form"> 
         <span id="login-lable">Calculator</span><br><br>
         <input id="cost" class="input" type="number" pattern="\d+" placeholder="Cost Of the Vehicle" required><br>
@@ -274,13 +278,10 @@
           </div>
     </form><br><br>
 
-    <div class="display" id="display">
-        <h2 style="padding: 10px;">Taxes</h2><br><br>
-        <p id="CIFDisplay"></p><br>
-        <p id="CIFConversionDisplay"></p><br>
-        <p id="totalTaxDisplay"></p><br>
-        <p id="finalCostDisplay"></p><br>
-    </div>
+    <p id="CIFDisplay"></p><br>
+    <p id="CIFConversionDisplay"></p><br>
+    <p id="totalTaxDisplay"></p><br>
+    <p id="finalCostDisplay"></p><br>
     
     <script>
         //let error = document.getElementById('error');
